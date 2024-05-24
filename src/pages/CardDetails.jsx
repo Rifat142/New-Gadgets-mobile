@@ -17,7 +17,7 @@ const CardDetails = () => {
 
   console.log(events, id);
   const event = events.find((event) => event.id === parseInt(id));
-//   console.log("this is event ", event);
+//  
 
   return (
     <div>

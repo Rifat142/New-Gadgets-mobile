@@ -28,7 +28,7 @@ const Home = () => {
       </div>
 
       <div data-aos="fade-right">
-        {/* <CardData></CardData> */}
+        <CardData></CardData>
       </div>
       <div data-aos="fade-up">
         <ClintComment></ClintComment>
