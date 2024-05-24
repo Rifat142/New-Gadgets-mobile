@@ -13,6 +13,8 @@ import CardDetails from "./pages/CardDetails";
 import AuthProvider from "./Authprovider/Authprovider";
 import PrivateRoutes from "./Roots/PrivateRoutes";
 import AddProduct from "./pages/AddProduct";
+import UpdateProduct from "./pages/UpdateProduct";
+import MyCart from "./pages/MyCart";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +41,16 @@ const router = createBrowserRouter([
         path:'/add-product',
         element:<AddProduct></AddProduct>
       },
+      {
+        path:'/cart',
+        element:<MyCart></MyCart>
+      },
+
+      {
+        path:'/update-items',
+        element:<UpdateProduct></UpdateProduct>
+      },
+
       {
         path: "/comment",
         element: <PrivateRoutes><MoreComment></MoreComment></PrivateRoutes>,

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Banner from "../Components/Banner";
+
 import CardData from "../Components/CardData";
 import ClintComment from "../Components/ClientComment";
 import Footer from "../Components/Footer";
@@ -21,11 +21,9 @@ const Home = () => {
   return (
     <div className="bg-slate-100  ">
       <Navbar></Navbar>
-      <div data-aos="fade-down">
-        <Banner></Banner>
-      </div>
+      
 
-      <div data-aos="zoom-in-down">
+      <div data-aos="fade-left">
         <Welcome></Welcome>
       </div>
 

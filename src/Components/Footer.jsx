@@ -99,11 +99,11 @@ const Footer = () => {
             </g>
           </svg>
 
-          <p className="font-bold">
+          <p className="font-bold text-white">
             Gadgets & mobile ltd. <br />
             Providing reliable services since 2012
           </p>
-          <p>Copyright © 2024 - All right reserved</p>
+          <p className="text-white">Copyright © 2024 - All right reserved</p>
         </aside>
         <nav>
           <div className="grid grid-flow-col gap-4">

@@ -1,35 +1,36 @@
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 
-const AddProduct = () => {
-    const handleAddItem = event =>{
-           event.preventDefault();
+const UpdateProduct = () => {
+  const handleUpdateItem = (event) => {
+    event.preventDefault();
 
-        //    const name = form.name.value;
-        //    console.log(name)
+    //    const name = form.name.value;
+    //    console.log(name)
 
-           const addItems = new FormData(event.currentTarget);
-           const name = addItems.get("name");
-           const photo = addItems.get("photo");
-           const brand = addItems.get("brand");
-           const rating = addItems.get("rating");
-           const price = addItems.get("price");
-           const type = addItems.get("type");
-           const description = addItems.get("description");
+    const Items = new FormData(event.currentTarget);
+    const name = Items.get("name");
+    const photo = Items.get("photo");
+    const brand = Items.get("brand");
+    const rating = Items.get("rating");
+    const price = Items.get("price");
+    const type = Items.get("type");
+    const description = Items.get("description");
 
-           const addedItem = {name , photo, brand,rating,price,type,description}
-            console.log(addedItem);
-            // console.log(name , photo, brand,rating,price,type,description )
-           
-    }
+    const updatedItem = { name, photo, brand, rating, price, type, description };
+    console.log(updatedItem);
+    // console.log(name , photo, brand,rating,price,type,description )
+  };
 
   return (
     <div>
       <Navbar></Navbar>
       <div className=" px-40 py-16 bg-gradient-to-r from-gray-900 to-gray-700 glass ">
-        <h1 className="mx-auto text-5xl font-bold text-center ">Add a product</h1>
-       <br />
-        <form onSubmit={handleAddItem}>
+        <h1 className="mx-auto text-5xl font-bold text-center ">
+          Update a product
+        </h1>
+        <br />
+        <form onSubmit={handleUpdateItem}>
           <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-8 ">
             <div>
               <span className="label-text">Name</span>
@@ -85,8 +86,6 @@ const AddProduct = () => {
                 className="input input-bordered input-success w-full max-w-xs"
               />
             </div>
-
-            
           </div>
           <br />
           <div>
@@ -107,4 +106,4 @@ const AddProduct = () => {
   );
 };
 
-export default AddProduct;
+export default UpdateProduct;

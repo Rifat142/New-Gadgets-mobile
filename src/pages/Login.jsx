@@ -80,16 +80,16 @@ const Login = () => {
     <div>
       <Navbar></Navbar>
 
-      <div className="hero min-h-screen bg-white ">
+      <div className="hero min-h-screen bg-gray-700 glass ">
         <div className="hero-content grid">
           <div className="text-center">
-            <h1 className="text-5xl font-bold text-black">Login now!</h1>
+            <h1 className="text-5xl font-bold text-white">Login now!</h1>
           </div>
-          <div className="card  sm:w-full lg:w-96  max-w-sm shadow-2xl bg-blue-300">
+          <div className="card  sm:w-full lg:w-96  max-w-sm shadow-2xl bg-gradient-to-r from-gray-900 to-gray-600 glass">
             <form onSubmit={handleLogin} className="card-body">
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text text-black">Email</span>
+                  <span className="label-text text-white">Email</span>
                 </label>
                 <input
                   type="email"
@@ -101,7 +101,7 @@ const Login = () => {
               </div>
               <div className="form-control ">
                 <label className="label">
-                  <span className="label-text text-black">Password</span>
+                  <span className="label-text text-white">Password</span>
                 </label>
                 <input
                   type="password"
@@ -113,21 +113,23 @@ const Login = () => {
                 <label className="label">
                   <a
                     href="#"
-                    className="label-text-alt link link-hover text-black"
+                    className="label-text-alt link link-hover text-white"
                   >
                     Forgot password?
                   </a>
                 </label>
               </div>
               <div className="form-control mt-6 gap-3">
-                <button className="btn btn-primary text-white">Login</button>
-                <button onClick={handleGoogleSignIn} className="btn btn-primary text-white">Login with Google</button>
+                <button className="btn bg-gray-800 glass text-white">Login</button>
+
+
+                <button onClick={handleGoogleSignIn} className="btn bg-yellow-500 glass text-white">Login with Google</button>
               </div>
               <div>
-                <p className="text-black">
+                <p className="text-white">
                   If u don't have an account,
                   <NavLink
-                    className={"link link-hover font-bold"}
+                    className={"link link-hover font-bold text-green-300"}
                     to="/register"
                   >
                     Register Now!

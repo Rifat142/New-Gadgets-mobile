@@ -43,11 +43,17 @@ const Navbar = () => {
       >
         Add Product 
       </NavLink>
+      <NavLink
+        to="/cart"
+        className={({ isActive }) => (isActive ? "text-blue-700" : "")}
+      >
+        My Cart 
+      </NavLink>
     </div>
   );
   return (
     <div>
-      <div className="navbar  bg-gray-800">
+      <div className="navbar  bg-gradient-to-r from-gray-900 to-gray-600">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
