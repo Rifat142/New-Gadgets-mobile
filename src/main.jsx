@@ -9,7 +9,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import AboutUs from "./pages/AboutUs";
 import MoreComment from "./pages/MoreComment";
-import CardDetails from "./pages/CardDetails";
+
 import AuthProvider from "./Authprovider/Authprovider";
 import PrivateRoutes from "./Roots/PrivateRoutes";
 import AddProduct from "./pages/AddProduct";
@@ -37,35 +37,43 @@ const router = createBrowserRouter([
       },
       {
         path: "/about-us",
-        element: <PrivateRoutes><AboutUs></AboutUs></PrivateRoutes>,
+        element: (
+          <PrivateRoutes>
+            <AboutUs></AboutUs>
+          </PrivateRoutes>
+        ),
       },
       {
-        path:'/add-product',
-        element:<AddProduct></AddProduct>
+        path: "/add-product",
+        element: <PrivateRoutes><AddProduct></AddProduct></PrivateRoutes>,
       },
       {
-        path:'/cart',
-        element:<MyCart></MyCart>
+        path: "/cart",
+        element: <MyCart></MyCart>,
       },
 
       {
-        path:'/update-items',
-        element:<UpdateProduct></UpdateProduct>
+        path: "/update-items",
+        element: <UpdateProduct></UpdateProduct>,
       },
 
       {
         path: "/comment",
-        element: <PrivateRoutes><MoreComment></MoreComment></PrivateRoutes>,
+        element: (
+          <PrivateRoutes>
+            <MoreComment></MoreComment>
+          </PrivateRoutes>
+        ),
       },
       {
-        path:'/product-details/:bname',
-        element:<ProductDetails></ProductDetails>,
-        loader:({params})=>fetch(`http://localhost:5000/product/${params.bname}`)
+        path: "/product-details/:bname",
+        element: <ProductDetails></ProductDetails>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/product/${params.bname}`),
       },
       {
         path: `/details/:id`,
-        element:<Details></Details>,
-        loader:(_id)=> fetch(`http://localhost:5000/product/${_id}`)
+        element: <PrivateRoutes><Details></Details></PrivateRoutes>,
         
       },
     ],

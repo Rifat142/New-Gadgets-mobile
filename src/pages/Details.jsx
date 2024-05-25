@@ -1,8 +1,13 @@
+import Navbar from "../Components/Navbar";
 
 const Details = () => {
+ 
+    
+
     return (
         <div>
-            jlkj
+            <Navbar></Navbar>
+            <p className="text-6xl text-center">sorry no details available right now!</p>
         </div>
     );
 };

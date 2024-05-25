@@ -25,6 +25,8 @@ const ProductDetails = () => {
                 <p>{product.description}</p>
                 <p>{product.price}</p>
                 <p> Rating: {product.rating}</p>
+                <p>Brand : {product.brand}</p>
+                <p>Type: {product.type}</p>
                 <div className="card-actions justify-end">
                   <Link to={`/details/${product._id}`}>
                     <button className="btn btn-primary">show details!</button>

@@ -8,11 +8,10 @@ const MoreComment = () => {
       <div className="bg-slate-100 mt-4 ">
         <div className="text-center font-bold text-black text-3xl">
           {" "}
-          What our clients say{" "}
+          What our buyers say{" "}
         </div>
         <p className="text-black font-serif text-1xl text-center">
-          Join us at The Evento and let's create unforgettable memories
-          together!
+          Join us at tp get awesome mobile & gadgets
         </p>
         <div className=" grid sm:grid-cols-1 lg:grid-cols-2 text-black bg-slate-100 gap-3 p-8">
           <div className=" border-double border-4 border-sky-500 shadow-2xl">
@@ -30,10 +29,7 @@ const MoreComment = () => {
                 <time className="text-xs opacity-50">12:45</time>
               </div>
               <div className="chat-bubble text-black bg-gradient-to-r from-blue-200 to-blue-500">
-                "What an amazing birthday party! The decorations were stunning,
-                the food was delicious, and the entertainment was top-notch.
-                Thank you, The Evento, for making my special day truly
-                unforgettable!"
+              "The iPhone is simply amazing! We love its sleek design, incredible performance, and the way it seamlessly integrates with all our other Apple devices. The user experience is intuitive, and the App Store has everything we need. The camera quality is phenomenal, capturing stunning photos and videos every time. We absolutely love our iPhone and couldn't imagine using anything else!"
               </div>
               <div className="chat-footer opacity-50">Delivered</div>
             </div>
@@ -51,10 +47,7 @@ const MoreComment = () => {
                 <time className="text-xs opacity-50">12:46</time>
               </div>
               <div className="chat-bubble text-black  bg-gradient-to-r from-blue-200 to-blue-500">
-                Thank you so much for your kind words! We're thrilled to hear
-                that you had an amazing birthday party. It was our pleasure to
-                be a part of your special day and help create unforgettable
-                memories for you!
+                Thank you so much for your kind words! 
               </div>
               <div className="chat-footer opacity-50">Seen at 12:46</div>
             </div>
@@ -74,10 +67,7 @@ const MoreComment = () => {
                 <time className="text-xs opacity-50">12:45</time>
               </div>
               <div className="chat-bubble  text-black bg-gradient-to-r from-blue-200 to-blue-500">
-                "Our wedding was a dream come true, all thanks to The Evento
-                team! From the breathtaking venue to the seamless coordination,
-                everything was perfect. We can't thank you enough for making our
-                big day so magical
+              e can't get enough of our Samsung phone. It's stylish, fast, and packed with innovative features. The display is one of the best we've ever seen, and the S Pen on the Galaxy Note series is a game-changer for productivity. The battery life easily gets us through the day, and the wireless charging is so convenient. Samsung Pay is incredibly useful, and we love the water-resistant design. Our Samsung phone exceeds all our expectations, and we love it!
               </div>
               <div className="chat-footer opacity-50">Delivered</div>
             </div>
@@ -95,9 +85,7 @@ const MoreComment = () => {
                 <time className="text-xs opacity-50">12:46</time>
               </div>
               <div className="chat-bubble  text-black bg-gradient-to-r from-blue-200 to-blue-500">
-                "You're very welcome! It was an honor to be a part of your
-                wedding day and help bring your dream wedding to life. Wishing
-                you both a lifetime of love and happiness together!"
+                "You're very welcome!
               </div>
               <div className="chat-footer opacity-50">Seen at 12:46</div>
             </div>
@@ -117,7 +105,7 @@ const MoreComment = () => {
                 <time className="text-xs opacity-50">12:45</time>
               </div>
               <div className="chat-bubble  text-black bg-gradient-to-r from-blue-200 to-blue-500">
-              "The retirement party you organized for my colleague was a huge success! The venue was elegant, the speeches were heartfelt, and everyone had a fantastic time. Thank you, The Evento, for helping us give our friend a memorable send-off into retirement!"
+              We are very pleased with our Asus phone. The gaming performance is outstanding, thanks to the powerful processor and ample RAM. The battery lasts a long time, even during intense gaming sessions. The display is vibrant and immersive, making our gaming and media experiences fantastic. The camera takes excellent photos, and the software is intuitive and easy to use. Our Asus phone delivers everything we need and more. We love it
               </div>
               <div className="chat-footer opacity-50">Delivered</div>
             </div>
@@ -135,7 +123,7 @@ const MoreComment = () => {
                 <time className="text-xs opacity-50">12:46</time>
               </div>
               <div className="chat-bubble  text-black bg-gradient-to-r from-blue-200 to-blue-500">
-              "We're delighted to hear that the retirement party was a success! It was a pleasure working with you to plan the event and celebrate your colleague's achievements. Thank you for choosing The Evento, and we wish your friend all the best in retirement!"
+              thank you so much
               </div>
               <div className="chat-footer opacity-50">Seen at 12:46</div>
             </div>
@@ -155,7 +143,7 @@ const MoreComment = () => {
                 <time className="text-xs opacity-50">12:45</time>
               </div>
               <div className="chat-bubble  text-black bg-gradient-to-r from-blue-200 to-blue-500">
-              "What a beautiful baby shower! The decorations were adorable, the games were so much fun, and the atmosphere was filled with love and joy. Thank you, The Evento, for helping us celebrate this special moment with our loved ones!"
+              "Our Samsung phone is perfect! The performance is outstanding, whether we're multitasking, gaming, or streaming videos. The build quality is solid, and the design is sleek and modern. The camera takes stunning photos, even in low light, and the wide-angle lens is great for capturing more of the scene. The expandable storage is a huge plus, allowing us to keep all our photos, videos, and apps without worry. We absolutely love our Samsung phone!"
               </div>
               <div className="chat-footer opacity-50">Delivered</div>
             </div>
@@ -173,7 +161,7 @@ const MoreComment = () => {
                 <time className="text-xs opacity-50">12:46</time>
               </div>
               <div className="chat-bubble  text-black bg-gradient-to-r from-blue-200 to-blue-500">
-              "Thank you for your lovely feedback! We're delighted to hear that you enjoyed the baby shower. It was a pleasure creating a memorable event for you and your loved ones as you welcome the newest member of your family. Congratulations again, and we wish you all the best on this exciting journey ahead!"
+              "Thank you for your lovely feedback!
               </div>
               <div className="chat-footer opacity-50">Seen at 12:46</div>
             </div>

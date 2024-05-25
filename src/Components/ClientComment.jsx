@@ -5,8 +5,8 @@ const ClintComment = () => {
   return (
  <div className="bg-slate-100">
 
-  <div className="text-center font-bold text-black text-3xl" > What our clients   say </div>
-      <p className="text-black font-serif text-1xl text-center">Join us at The Evento and let's create unforgettable memories together!</p>
+  <div className="text-center font-bold text-black text-3xl" > What our buyers  say </div>
+      <p className="text-black font-serif text-1xl text-center">Join us to explore more tech!</p>
        <div className="grid sm:grid-col  lg:grid-cols-2  text-black bg-slate-100 gap-3 p-8">
       <div className=" border-double border-4 border-sky-500 shadow-2xl">
         <div className="chat chat-start">
@@ -23,9 +23,7 @@ const ClintComment = () => {
             <time className="text-xs opacity-50">12:45</time>
           </div>
           <div className="chat-bubble text-black bg-gradient-to-r from-blue-200 to-blue-500">
-            "What an amazing birthday party! The decorations were stunning, the
-            food was delicious, and the entertainment was top-notch. Thank you,
-            The Evento, for making my special day truly unforgettable!"
+          The iPhone is simply amazing! We love its sleek design, incredible performance, and the way it seamlessly integrates with all our other Apple devices. The user experience is intuitive, and the App Store has everything we need. The camera quality is phenomenal, capturing stunning photos and videos every time. We absolutely love our iPhone and couldn't imagine using anything else!
           </div>
           <div className="chat-footer opacity-50">Delivered</div>
         </div>
@@ -43,9 +41,7 @@ const ClintComment = () => {
             <time className="text-xs opacity-50">12:46</time>
           </div>
           <div className="chat-bubble text-black  bg-gradient-to-r from-blue-200 to-blue-500">
-            Thank you so much for your kind words! We're thrilled to hear that
-            you had an amazing birthday party. It was our pleasure to be a part
-            of your special day and help create unforgettable memories for you!
+            Thank you so much for your kind words!
           </div>
           <div className="chat-footer opacity-50">Seen at 12:46</div>
         </div>
@@ -65,10 +61,7 @@ const ClintComment = () => {
             <time className="text-xs opacity-50">12:45</time>
           </div>
           <div className="chat-bubble  text-black bg-gradient-to-r from-blue-200 to-blue-500">
-            "Our wedding was a dream come true, all thanks to The Evento team!
-            From the breathtaking venue to the seamless coordination, everything
-            was perfect. We can't thank you enough for making our big day so
-            magical
+          Samsung phones are fantastic! We love the stunning display, powerful features, and innovative design. The AMOLED screen is breathtaking, offering vivid colors and deep blacks. The camera system is incredibly versatile, perfect for any photography enthusiast. The battery life is excellent, and the fast charging feature is a lifesaver. Samsung's One UI is user-friendly and customizable, making it a joy to use every day. We love our Samsung phone!"
           </div>
           <div className="chat-footer opacity-50">Delivered</div>
         </div>
@@ -86,9 +79,7 @@ const ClintComment = () => {
             <time className="text-xs opacity-50">12:46</time>
           </div>
           <div className="chat-bubble  text-black bg-gradient-to-r from-blue-200 to-blue-500">
-            "You're very welcome! It was an honor to be a part of your wedding
-            day and help bring your dream wedding to life. Wishing you both a
-            lifetime of love and happiness together!"
+            "You're very welcome! 
           </div>
           <div className="chat-footer opacity-50">Seen at 12:46</div>
         </div>

@@ -1,13 +1,13 @@
  [
     {
       "id": 1,
-      "bname": "apple",
+      "bname": "Apple",
       "image": "https://i.ibb.co/tmtRGnw/download.png"
      
     },
     {
       "id": 2,
-      "bname": "samsung",
+      "bname": "Samsung",
       "image": "https://i.ibb.co/LSzDsXW/images.jpg"
      
     },
@@ -15,8 +15,21 @@
       "id": 3,
       "bname": "lenevo",
       "image": "https://i.ibb.co/t4jDLK4/download.jpg"
-      
-     
+    },
+    {
+      "id": 4,
+      "bname": "Asus",
+      "image": "https://i.ibb.co/T12HQdy/download.png"
+    },
+    {
+      "id": 5,
+      "bname": "Xiomi",
+      "image": "https://i.ibb.co/c1MgWcQ/download.png"
+    },
+    {
+      "id": 6,
+      "bname": "Huwai",
+      "image": "https://i.ibb.co/WvMsGPT/download.png"
     }
   
   
