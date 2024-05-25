@@ -69,7 +69,7 @@ const router = createBrowserRouter([
         path: "/product-details/:bname",
         element: <ProductDetails></ProductDetails>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/product/${params.bname}`),
+          fetch(`https://gadgets-mobile-server-9whwyjny6-jh-rifat-s-projects.vercel.app/product/${params.bname}`),
       },
       {
         path: `/details/:id`,
