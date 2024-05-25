@@ -6,7 +6,7 @@ import Card from "./card/Card";
 
 const CardData = () => {
 
-    const [brand ,setBrand]= useState([]);
+    const [brand,setBrand]= useState([]);
          useEffect(()=>{
           fetch(`data.json`)
           .then(res=>res.json())

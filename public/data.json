@@ -1,19 +1,19 @@
  [
     {
       "id": 1,
-      "name": "apple",
+      "bname": "apple",
       "image": "https://i.ibb.co/tmtRGnw/download.png"
      
     },
     {
       "id": 2,
-      "name": "samsung",
+      "bname": "samsung",
       "image": "https://i.ibb.co/LSzDsXW/images.jpg"
      
     },
     {
       "id": 3,
-      "name": "lanevo",
+      "bname": "lenevo",
       "image": "https://i.ibb.co/t4jDLK4/download.jpg"
       
      

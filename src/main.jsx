@@ -15,6 +15,8 @@ import PrivateRoutes from "./Roots/PrivateRoutes";
 import AddProduct from "./pages/AddProduct";
 import UpdateProduct from "./pages/UpdateProduct";
 import MyCart from "./pages/MyCart";
+import ProductDetails from "./pages/ProductDetails";
+import Details from "./pages/Details";
 
 const router = createBrowserRouter([
   {
@@ -56,9 +58,15 @@ const router = createBrowserRouter([
         element: <PrivateRoutes><MoreComment></MoreComment></PrivateRoutes>,
       },
       {
-        path: "/details/:id",
-        element: <PrivateRoutes><CardDetails></CardDetails></PrivateRoutes>,
-        loader: () => fetch('/data.json')
+        path:'/product-details/:bname',
+        element:<ProductDetails></ProductDetails>,
+        loader:({params})=>fetch(`http://localhost:5000/product/${params.bname}`)
+      },
+      {
+        path: `/details/:id`,
+        element:<Details></Details>,
+        loader:(_id)=> fetch(`http://localhost:5000/product/${_id}`)
+        
       },
     ],
   },
