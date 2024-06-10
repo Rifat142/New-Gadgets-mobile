@@ -5,7 +5,7 @@ import Footer from "../Components/Footer";
 
 const ProductDetails = () => {
   const { bname } = useParams();
-  const { brand, products } = useLoaderData();
+  const { brand, products} = useLoaderData();
   console.log(products);
 
   return (
@@ -30,6 +30,9 @@ const ProductDetails = () => {
                 <div className="card-actions justify-end">
                   <Link to={`/details/${product._id}`}>
                     <button className="btn btn-primary">show details!</button>
+                  </Link>
+                  <Link to={`/update-items`}>
+                    <button className="btn btn-primary">Update</button>
                   </Link>
                 </div>
               </div>

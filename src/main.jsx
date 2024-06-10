@@ -76,7 +76,10 @@ const router = createBrowserRouter([
       {
         path: `/details/:id`,
         element: <PrivateRoutes><Details></Details></PrivateRoutes>,
-        
+        loader: ({params})=>
+          fetch (`https://gadgets-mobile-server.vercel.app/products/${params.id}`)
+       
+          
       },
     ],
   },

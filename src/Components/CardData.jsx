@@ -8,7 +8,7 @@ const CardData = () => {
 
     const [brand,setBrand]= useState([]);
          useEffect(()=>{
-          fetch(`data.json`)
+          fetch(`https://gadgets-mobile-server.vercel.app/bname`)
           .then(res=>res.json())
           .then(data=> setBrand(data))
     

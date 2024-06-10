@@ -98,7 +98,7 @@ const UpdateProduct = () => {
             />
           </div>
           <br />
-          <button className="btn btn-block">Add item</button>
+          <button className="btn btn-block">Update now!</button>
         </form>
       </div>
       <Footer></Footer>
