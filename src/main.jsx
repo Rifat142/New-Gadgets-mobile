@@ -14,7 +14,7 @@ import AuthProvider from "./Authprovider/Authprovider";
 import PrivateRoutes from "./Roots/PrivateRoutes";
 import AddProduct from "./pages/AddProduct";
 import UpdateProduct from "./pages/UpdateProduct";
-import MyCart from "./pages/MyCart";
+import MyCart from "./pages/MyCart/MyCart";
 import ProductDetails from "./pages/ProductDetails";
 import Details from "./pages/Details";
 import ErrorPage from "./pages/ErrorPage";
@@ -55,7 +55,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/cart",
-        element: <MyCart></MyCart>,
+        element: <PrivateRoutes><MyCart></MyCart></PrivateRoutes>,
       },
 
       {

@@ -14,11 +14,19 @@ const ProductDetails = () => {
       <h1 className="text-center text-5xl">{brand} Products we got </h1>
 
       <div className="grid sm:grid-cols-1  lg:grid-cols-2 p-32 ml-12 gap-3">
-        {products.map((product, index) => (
+        { 
+        
+        products.length === 0 ? (
+          <div className="text-center text-2xl col-span-2">
+            No products available.
+          </div>
+        ) :
+        
+        products.map((product, index) => (
           <div key={index} className="">
             <div className="card card-compact w-96 bg-base-100 shadow-xl">
               <figure>
-                <img src={product.photo} alt="Shoes" />
+                <img className="w-1/2" src={product.photo} alt="Shoes" />
               </figure>
               <div className="card-body">
                 <h2 className="card-title">{product.name}</h2>

@@ -18,7 +18,7 @@ const AddProduct = () => {
     const description = addItems.get("description");
 
     const addedItem = { name, photo, brand, rating, price, type, description };
-    console.log(addedItem);
+    // console.log(addedItem);
 
     // send to the client server;
     fetch("http://localhost:5000/product", {
@@ -30,7 +30,7 @@ const AddProduct = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
        if(data.insertedId){
         Swal.fire({
             title: "Good job!",

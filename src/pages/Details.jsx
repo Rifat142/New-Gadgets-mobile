@@ -1,14 +1,50 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import Navbar from "../Components/Navbar";
-
+import Swal from "sweetalert2";
 const Details = () => {
   const { id } = useParams();
   const product = useLoaderData();
-  console.log(product);
+
+  
   
   console.log("product", product);
   console.log(id);
   const {name , photo  , description , type , price , rating , brand } = product
+
+    // sending to cart 
+    const handleAddCart = (event)=>{
+      event.preventDefault();
+      const cartData = {
+        name : product.name,
+        photo : product.photo,
+        description : product.description,
+        price : product.price,
+        
+        
+      }
+      console.log(cartData);
+
+      fetch("http://localhost:5000/cart", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(cartData),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          // console.log(data);
+         if(data.insertedId){
+          Swal.fire({
+              title: "Good job!",
+              text: "Product added sucessfully",
+              icon: "success"
+            });
+         }
+        });
+    }
+
+
 
   return (
     <div>
@@ -38,7 +74,7 @@ const Details = () => {
             </div>
             <div className="card-actions justify-end">
               
-              <button className="btn btn-primary">Add to cart</button>
+              <button onClick={handleAddCart} className="btn btn-primary">Add to cart</button>
             </div>
           </div>
         </div>
