@@ -21,7 +21,7 @@ const AddProduct = () => {
     console.log(addedItem);
 
     // send to the client server;
-    fetch("https://gadgets-mobile-server.vercel.app/product", {
+    fetch("http://localhost:5000/product", {
       method: "POST",
       headers: {
         "content-type": "application/json",

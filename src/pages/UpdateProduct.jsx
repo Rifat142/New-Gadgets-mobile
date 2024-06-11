@@ -1,7 +1,17 @@
+import { useLoaderData, useParams } from "react-router-dom";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
-
+import Swal from "sweetalert2";
 const UpdateProduct = () => {
+
+  const { id } = useParams();
+  const product = useLoaderData();
+  console.log(product , id);
+ 
+  const { _id,  name , photo  , description , type , price , rating , brand } = product
+
+
+
   const handleUpdateItem = (event) => {
     event.preventDefault();
 
@@ -18,8 +28,32 @@ const UpdateProduct = () => {
     const description = Items.get("description");
 
     const updatedItem = { name, photo, brand, rating, price, type, description };
-    console.log(updatedItem);
+    console.log( _id, updatedItem);
     // console.log(name , photo, brand,rating,price,type,description )
+
+       // send to the client server;
+    fetch(`http://localhost:5000/product/${_id}`, {
+      method: "PUT",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(updatedItem),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+       if(data.modifiedCount >0){
+        Swal.fire({
+            title: "Good job!",
+            text: "Product Updated sucessfully",
+            icon: "success"
+          });
+       }
+      });
+
+
+
+
   };
 
   return (
@@ -36,6 +70,7 @@ const UpdateProduct = () => {
               <span className="label-text">Name</span>
               <input
                 type="text"
+                defaultValue={name}
                 placeholder="Type here"
                 name="name"
                 className="input input-bordered input-success w-full max-w-xs"
@@ -45,6 +80,7 @@ const UpdateProduct = () => {
               <span className="label-text">Image Url</span>
               <input
                 type="text"
+                defaultValue={photo}
                 placeholder="Type here"
                 name="photo"
                 className="input input-bordered input-success w-full max-w-xs"
@@ -54,6 +90,7 @@ const UpdateProduct = () => {
               <span className="label-text">Type</span>
               <input
                 type="text"
+                defaultValue={type}
                 placeholder="Type here"
                 name="type"
                 className="input input-bordered input-success w-full max-w-xs"
@@ -63,6 +100,7 @@ const UpdateProduct = () => {
               <span className="label-text">Price</span>
               <input
                 type="text"
+                defaultValue={price}
                 placeholder="Type here"
                 name="price"
                 className="input input-bordered input-success w-full max-w-xs"
@@ -72,6 +110,7 @@ const UpdateProduct = () => {
               <span className="label-text">Brand Name</span>
               <input
                 type="text"
+                defaultValue={brand}
                 placeholder="Type here"
                 name="brand"
                 className="input input-bordered input-success w-full max-w-xs"
@@ -81,6 +120,7 @@ const UpdateProduct = () => {
               <span className="label-text">Rating</span>
               <input
                 type="text"
+                defaultValue={rating}
                 placeholder="Type here"
                 name="rating"
                 className="input input-bordered input-success w-full max-w-xs"
@@ -92,6 +132,7 @@ const UpdateProduct = () => {
             <span className="label-text">Short description</span>
             <input
               type="text"
+              defaultValue={description}
               name="description"
               placeholder="Type here"
               className="input input-bordered input-accent w-full max-w-full"

@@ -14,7 +14,7 @@ const Details = () => {
     <div>
       <Navbar></Navbar>
      
-      <p className="text-6xl text-center mb-12">Details are here {name}</p>
+      <p className="text-6xl text-center mb-12">Details are here</p>
       <div>
         <div className="card lg:card-side bg-base-100 shadow-xl">
           <figure className="w-1/2">

@@ -23,7 +23,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Roots></Roots>,
-    errorElement:<ErrorPage></ErrorPage>, 
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -47,16 +47,15 @@ const router = createBrowserRouter([
       },
       {
         path: "/add-product",
-        element: <PrivateRoutes><AddProduct></AddProduct></PrivateRoutes>,
+        element: (
+          <PrivateRoutes>
+            <AddProduct></AddProduct>
+          </PrivateRoutes>
+        ),
       },
       {
         path: "/cart",
         element: <MyCart></MyCart>,
-      },
-
-      {
-        path: "/update-items",
-        element: <UpdateProduct></UpdateProduct>,
       },
 
       {
@@ -71,15 +70,28 @@ const router = createBrowserRouter([
         path: "/product-details/:bname",
         element: <ProductDetails></ProductDetails>,
         loader: ({ params }) =>
-          fetch(`https://gadgets-mobile-server.vercel.app/product/${params.bname}`),
+          fetch(`http://localhost:5000/product/${params.bname}`),
       },
       {
         path: `/details/:id`,
-        element: <PrivateRoutes><Details></Details></PrivateRoutes>,
-        loader: ({params})=>
-          fetch (`https://gadgets-mobile-server.vercel.app/products/${params.id}`)
-       
-          
+        element: (
+          <PrivateRoutes>
+            <Details></Details>
+          </PrivateRoutes>
+        ),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/products/${params.id}`),
+      },
+
+      {
+        path: "/update-items/:id",
+        element: (
+          <PrivateRoutes>
+            <UpdateProduct></UpdateProduct>
+          </PrivateRoutes>
+        ),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/products/${params.id}`)
       },
     ],
   },

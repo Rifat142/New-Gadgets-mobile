@@ -31,7 +31,7 @@ const ProductDetails = () => {
                   <Link to={`/details/${product._id}`}>
                     <button className="btn btn-primary">show details!</button>
                   </Link>
-                  <Link to={`/update-items`}>
+                  <Link to={`/update-items/${product._id}`}>
                     <button className="btn btn-primary">Update</button>
                   </Link>
                 </div>
